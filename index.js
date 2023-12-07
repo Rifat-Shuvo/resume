@@ -9,13 +9,13 @@ const generateCv = () => {
     const phone = document.getElementById('phone').value
 
     console.log(name, email, skills, subject, degree);
-    let newWindow = window.open('', '_blank')
+    let newWindow = window.open()
 
     let newelement = `<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>your Resume</title>
+    <title>Resume of ${name}</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
