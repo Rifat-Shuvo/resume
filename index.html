@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CV GENERATOR</title>
+
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="card w-full p-5 md:w-2/3 mx-auto bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h1 class="text-3xl font-bold text-center">Quick CV GENERATOR</h1>
+            <input id="name" type="text" placeholder="Type Your name here" class="input input-bordered input-primary w-full max-w-xs" />
+            <input id="email" type="text" placeholder="Type Your email here" class="input input-bordered input-primary w-full max-w-xs" />
+            <input id="phone" type="text" placeholder="Type Your phone here" class="input input-bordered input-primary w-full max-w-xs" />
+            <input id="skills" type="text" placeholder="Type Your skills here" class="input input-bordered input-primary w-full max-w-xs" />
+            <input id="subject" type="text" placeholder="Type Your subject here" class="input input-bordered input-primary w-full max-w-xs" />
+            <input id="degree" type="text" placeholder="Type name of Your degree here" class="input input-bordered input-primary w-full max-w-xs" />
+          
+          <div class="card-actions">
+            <button onclick="generateCv()" class="btn btn-primary">Generate CV Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- JS -->
+      <script src="./index.js"></script>
+</body>
+
+</html>
