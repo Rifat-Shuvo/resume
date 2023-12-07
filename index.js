@@ -7,7 +7,18 @@ const generateCv = () => {
     const subject = document.getElementById('subject').value
     const degree = document.getElementById('degree').value
     const phone = document.getElementById('phone').value
-
+//photo upload
+    const photoInput = document.getElementById('photo')
+    const photo = photoInput.files[0]
+    const previewPhoto = document.getElementById('previewPhoto')
+    if (photo) {
+        const reader = new FileReader()
+        reader.onload = function (e) {
+            previewPhoto.src = e.target.result
+            previewPhoto.style.display = 'block'
+        }
+        reader.readAsDataURL(photo)
+    } 
     console.log(name, email, skills, subject, degree);
     let newWindow = window.open()
 
@@ -21,6 +32,9 @@ const generateCv = () => {
 </head>
 <body>
     <H1 class="text-green-400">CV Of ${name}</H1>
+    
+    <img src="${previewPhoto.src}" alt="user photo">
+    
     <H1> ${email}</H1>
     <H1> ${phone}</H1>
 
