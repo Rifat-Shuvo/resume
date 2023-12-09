@@ -39,13 +39,12 @@ const generateCv = () => {
 <body class="m-5 p-5">
     <div class="pb-3 border-b-2">
         <h1 class="text-3xl font-bold">${name}</h1>
-        <h6 class="text-lg text-green-500 font-medium">Full Stack Developer (MERN)</h6>
         <h3 class="font-bold">Email: ${email}</h3>
         <h3 class="font-bold">Phone: ${phone}</h3>
     </div>
     <div>
         <h1 class="p-3 border-b-2 text-2xl bg-gray-400 font-bold">Summary</h1>
-        <p class="text-justify font-medium py-4">Highly motivated and detail-oriented web developer with 3 years of experience in building and maintaining dynamic and engaging web applications. Skilled in various front-end and back-end technologies, including HTML, CSS, JavaScript, React, Firebase, Express, MongoDB and Node.js. Eager to leverage my expertise and passion for web development to contribute to a challenging and rewarding role.</p>
+        <p class="text-justify font-medium py-4">I am a hardworking and self-motivated individual with a strong analytical mind. I am comfortable working both independently and collaboratively, and I am always eager to learn new things. I am also a problem solver, and I am not afraid to face challenges head-on.</p>
     </div>
     <div class="mb-4">
         <h1 class="p-3 text-2xl border-b-2 bg-gray-400 font-bold mb-4">Skills & Expertise</h1>
@@ -67,5 +66,6 @@ const generateCv = () => {
 </html>
     `
 {/* <button onclick="window.print()" class="btn btn-primary mt-[80vh]">Print now</button> */}
+{/* <h6 class="text-lg text-green-500 font-medium">Full Stack Developer (MERN)</h6> */}
     newWindow.document.write(newelement)
 }
