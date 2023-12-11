@@ -60,7 +60,7 @@ const generateCv = () => {
         <p class="text-justify font-medium italic py-1">${degree} in ${subject}</p> 
     </div>
 
-    <button onclick="window.print()" class="btn btn-primary mt-10">Print/Download now</button> 
+    <button onclick="window.print()" class="mt-20 text-green-600 font-bold underline">Print/Download now</button> 
 </body>
 
 </html>
